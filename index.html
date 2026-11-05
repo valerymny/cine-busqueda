@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StartMovie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>StartMovie</h1>
+    <label for="buscador" class="oculto">Buscar película</label>
+    <input type="search" id="buscador" placeholder="Buscar por título...">
+    <div id="filtros">
+      <button class="filtro activo" data-genero="Todas">Todas</button>
+      <button class="filtro" data-genero="Acción">Acción</button>
+      <button class="filtro" data-genero="Comedia">Comedia</button>
+      <button class="filtro" data-genero="Drama">Drama</button>
+      <button class="filtro" data-genero="Romance">Romance</button>
+    </div>
+  </header>
+  <main id="lista" aria-live="polite"></main>
+  <script src="script.js"></script>
+</body>
+</html>
